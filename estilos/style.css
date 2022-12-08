@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #ecf0f5;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+}
+
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background-color: rgb(73, 166, 233);
+    margin: 15px auto 40px;
+
+  }
+
+.review {
+    background-color: white;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+}
+
+.img-container {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    padding: 20px 0 40px;
+    position: relative;
+}
+
+#person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover; /*ocupa o conteúdo de img-container sem que a imagem distorça por não se quadrada*/
+    border-radius: 50%;
+    box-shadow: 5px -5px rgb(73, 166, 233); 
+    position: relative;  
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    content:"\201D";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background-color: rgb(73, 166, 233);
+    color: white;
+  }
